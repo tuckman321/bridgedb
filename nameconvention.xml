@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Tucker Raney</Author>
+  <LastAuthor>Tucker Raney</LastAuthor>
+  <Created>2015-05-27T02:04:22Z</Created>
+  <LastSaved>2015-05-27T02:01:28Z</LastSaved>
+  <Company>University of Massachusetts</Company>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>11160</WindowHeight>
+  <WindowWidth>25420</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <Date1904/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="nameconvention.txt">
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="56" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Column ss:Index="3" ss:Width="90"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Bridge number</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BridgeNo</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(RC[-3],RC[-2],RC[-1],&quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Street/RR overpassing</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Location</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Previous inspectors</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">InspectedBy</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Most recent inspection date</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">InspectDate </Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">date</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Chicago Viaduct Number</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ChiViaNo</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">DOT Crossing Number</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">DotCrossNo</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Year bridge was built</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Built</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Type of bridge</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Type</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Length of bridge</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Length </Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Date of previous inspection</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">LastInspectDate</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">date</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">List of repairs performed</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">LastRepairs</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Number and type of spans</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">NoTypeSpan</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Repair priority number</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">RepairPriority</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">General conditions</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GenCond</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Rating of walkway</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Walkway</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Walkway comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComWalkway</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Rating of handrails</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Handrail</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Handrailing comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComHandrail</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Track rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Track </Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Number and type of tracks comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComTrack</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Rating of ballast</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Ballast</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Ballast comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComBallast</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Rating of deck</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Deck</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Deck comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComDeck</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Rating of floor system</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">FloorSystem</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Floor system comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComFloorSystem</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Rating of through girders</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ThruGirder</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Through girder comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComThruGirder</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Cross girder rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">XGirder</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Cross girder comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComXGirder</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Stringer rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Stringer</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Stringer comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComStringer</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Bearings rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Bearing</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Bearings rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComBearing</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Columns and piers rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ColPier</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Comments on columns and piers</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComColPier</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Caps rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Caps</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Comments on caps</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComCap</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Posts rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Post</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Posts comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComPost</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Bases rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Bases</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Bases comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComBase</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Abutments rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Abut </Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Abutments comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComAbut</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Backwall ratings</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BackWall</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string BackWall:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3"><Data ss:Type="String">ComBackWall</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string BackWall:integer ComBackWall:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Bridge seat rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Seat</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string BackWall:integer ComBackWall:string Seat:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Bridge seat comments</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComSeat</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string BackWall:integer ComBackWall:string Seat:integer ComSeat:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Paint rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Paint</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string BackWall:integer ComBackWall:string Seat:integer ComSeat:string Paint:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Comments on paint system</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComPaint</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string BackWall:integer ComBackWall:string Seat:integer ComSeat:string Paint:integer ComPaint:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Date of last painting</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">LastPaint</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">date</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string BackWall:integer ComBackWall:string Seat:integer ComSeat:string Paint:integer ComPaint:string LastPaint:date </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Lighting rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Light</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string BackWall:integer ComBackWall:string Seat:integer ComSeat:string Paint:integer ComPaint:string LastPaint:date Light:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Comments on lighting</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComLight</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string BackWall:integer ComBackWall:string Seat:integer ComSeat:string Paint:integer ComPaint:string LastPaint:date Light:integer ComLight:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Lights are maintained by</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">MaintLight</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string BackWall:integer ComBackWall:string Seat:integer ComSeat:string Paint:integer ComPaint:string LastPaint:date Light:integer ComLight:string MaintLight:string </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">End post rating</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Endpost</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">integer</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string BackWall:integer ComBackWall:string Seat:integer ComSeat:string Paint:integer ComPaint:string LastPaint:date Light:integer ComLight:string MaintLight:string Endpost:integer </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Comments on endposts</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ComEndpost</Data></Cell>
+    <Cell><Data ss:Type="String">:</Data></Cell>
+    <Cell><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:Formula="=CONCATENATE(R[-1]C,RC[-3],RC[-2],RC[-1], &quot; &quot;)"><Data
+      ss:Type="String">BridgeNo:string Location:string InspectedBy:string InspectDate :date ChiViaNo:string DotCrossNo:string Built:integer Type:string Length :integer LastInspectDate:date LastRepairs:string NoTypeSpan:string RepairPriority:integer GenCond:string Walkway:integer ComWalkway:string Handrail:integer ComHandrail:string Track :integer ComTrack:string Ballast:integer ComBallast:string Deck:integer ComDeck:string FloorSystem:integer ComFloorSystem:string ThruGirder:integer ComThruGirder:string XGirder:integer ComXGirder:string Stringer:integer ComStringer:string Bearing:integer ComBearing:string ColPier:integer ComColPier:string Caps:integer ComCap:string Post:integer ComPost:string Bases:integer ComBase:string Abut :integer ComAbut:string BackWall:integer ComBackWall:string Seat:integer ComSeat:string Paint:integer ComPaint:string LastPaint:date Light:integer ComLight:string MaintLight:string Endpost:integer ComEndpost:string </Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <TopRowVisible>27</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>55</ActiveRow>
+     <ActiveCol>5</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

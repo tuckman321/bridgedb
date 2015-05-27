@@ -1,0 +1,137 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Bridges</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bridgeno</th>
+      <th>Location</th>
+      <th>Inspectedby</th>
+      <th>Inspectdate</th>
+      <th>Chiviano</th>
+      <th>Dotcrossno</th>
+      <th>Built</th>
+      <th>Type</th>
+      <th>Length</th>
+      <th>Lastinspectdate</th>
+      <th>Lastrepairs</th>
+      <th>Notypespan</th>
+      <th>Repairpriority</th>
+      <th>Gencond</th>
+      <th>Walkway</th>
+      <th>Comwalkway</th>
+      <th>Handrail</th>
+      <th>Comhandrail</th>
+      <th>Track</th>
+      <th>Comtrack</th>
+      <th>Ballast</th>
+      <th>Comballast</th>
+      <th>Deck</th>
+      <th>Comdeck</th>
+      <th>Floorsystem</th>
+      <th>Comfloorsystem</th>
+      <th>Thrugirder</th>
+      <th>Comthrugirder</th>
+      <th>Xgirder</th>
+      <th>Comxgirder</th>
+      <th>Stringer</th>
+      <th>Comstringer</th>
+      <th>Bearing</th>
+      <th>Combearing</th>
+      <th>Colpier</th>
+      <th>Comcolpier</th>
+      <th>Caps</th>
+      <th>Comcap</th>
+      <th>Post</th>
+      <th>Compost</th>
+      <th>Bases</th>
+      <th>Combase</th>
+      <th>Abut</th>
+      <th>Comabut</th>
+      <th>Backwall</th>
+      <th>Combackwall</th>
+      <th>Seat</th>
+      <th>Comseat</th>
+      <th>Paint</th>
+      <th>Compaint</th>
+      <th>Lastpaint</th>
+      <th>Light</th>
+      <th>Comlight</th>
+      <th>Maintlight</th>
+      <th>Endpost</th>
+      <th>Comendpost</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bridges.each do |bridge| %>
+      <tr>
+        <td><%= bridge.BridgeNo %></td>
+        <td><%= bridge.Location %></td>
+        <td><%= bridge.InspectedBy %></td>
+        <td><%= bridge.InspectDate %></td>
+        <td><%= bridge.ChiViaNo %></td>
+        <td><%= bridge.DotCrossNo %></td>
+        <td><%= bridge.Built %></td>
+        <td><%= bridge.Type %></td>
+        <td><%= bridge.Length %></td>
+        <td><%= bridge.LastInspectDate %></td>
+        <td><%= bridge.LastRepairs %></td>
+        <td><%= bridge.NoTypeSpan %></td>
+        <td><%= bridge.RepairPriority %></td>
+        <td><%= bridge.GenCond %></td>
+        <td><%= bridge.Walkway %></td>
+        <td><%= bridge.ComWalkway %></td>
+        <td><%= bridge.Handrail %></td>
+        <td><%= bridge.ComHandrail %></td>
+        <td><%= bridge.Track %></td>
+        <td><%= bridge.ComTrack %></td>
+        <td><%= bridge.Ballast %></td>
+        <td><%= bridge.ComBallast %></td>
+        <td><%= bridge.Deck %></td>
+        <td><%= bridge.ComDeck %></td>
+        <td><%= bridge.FloorSystem %></td>
+        <td><%= bridge.ComFloorSystem %></td>
+        <td><%= bridge.ThruGirder %></td>
+        <td><%= bridge.ComThruGirder %></td>
+        <td><%= bridge.Xgirder %></td>
+        <td><%= bridge.ComXGirder %></td>
+        <td><%= bridge.Stringer %></td>
+        <td><%= bridge.ComStringer %></td>
+        <td><%= bridge.Bearing %></td>
+        <td><%= bridge.ComBearing %></td>
+        <td><%= bridge.ColPier %></td>
+        <td><%= bridge.ComColPier %></td>
+        <td><%= bridge.Caps %></td>
+        <td><%= bridge.ComCap %></td>
+        <td><%= bridge.Post %></td>
+        <td><%= bridge.ComPost %></td>
+        <td><%= bridge.Bases %></td>
+        <td><%= bridge.ComBase %></td>
+        <td><%= bridge.Abut %></td>
+        <td><%= bridge.ComAbut %></td>
+        <td><%= bridge.BackWall %></td>
+        <td><%= bridge.ComBackWall %></td>
+        <td><%= bridge.Seat %></td>
+        <td><%= bridge.ComSeat %></td>
+        <td><%= bridge.Paint %></td>
+        <td><%= bridge.ComPaint %></td>
+        <td><%= bridge.LastPaint %></td>
+        <td><%= bridge.Light %></td>
+        <td><%= bridge.ComLight %></td>
+        <td><%= bridge.MaintLight %></td>
+        <td><%= bridge.Endpost %></td>
+        <td><%= bridge.ComEndpost %></td>
+        <td><%= link_to 'Show', bridge %></td>
+        <td><%= link_to 'Edit', edit_bridge_path(bridge) %></td>
+        <td><%= link_to 'Destroy', bridge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bridge', new_bridge_path %>
