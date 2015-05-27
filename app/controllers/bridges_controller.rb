@@ -1,5 +1,7 @@
 class BridgesController < ApplicationController
   before_action :set_bridge, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
   def index
     @bridges = Bridge.all
@@ -9,14 +11,14 @@ class BridgesController < ApplicationController
   end
 
   def new
-    @bridge = Bridge.new
+    @bridge = current_user.bridges.build
   end
 
   def edit
   end
 
   def create
-    @bridge = Bridge.new(bridge_params)
+    @bridge = current_user.bridges.build(bridge_params)
     if @bridge.save
       redirect_to @bridge, notice: 'Bridge was successfully created.'
     else
@@ -41,6 +43,11 @@ class BridgesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_bridge
       @bridge = Bridge.find(params[:id])
+    end
+
+    def correct_user
+      @bridge = current_user.bridges.find_by(id: params[:id])
+      redirect_to bridges_path, notice: "Not authorized to edit this bridge" if @bridge.nil?
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
