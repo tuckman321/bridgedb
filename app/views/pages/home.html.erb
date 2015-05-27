@@ -1,8 +1,12 @@
 <div class="jumbotron center">
-	
-		<h3>Bridge Database</h3>
-		<p>
-			Click here to <%= link_to "Log in", "#", class: "btn btn-primary" %>
-		</p>
+	<h3>Bridge Database</h3>
+		
+		<% if user_signed_in? %>
+			Do something
+		<% else %>
+     	<p>
+				<%= link_to "Log in", new_user_session_path, class: "btn btn-primary" %>
+			</p>
+    <% end %>
 
 </div>
