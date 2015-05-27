@@ -1,142 +1,19 @@
-<h1>Listing Bridges</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Bridge No.</th>
-      <th>Location</th>
-      <th>Inspected by</th>
-      <th>Inspection date</th>
-      <th>Chicago Viaduct No.</th>
-      <th>DOT Crossing No.</th>
-      <th>Year Built</th>
-      <th>Type</th>
-      <th>Length</th>
-      <th>Previous inspection date</th>
-      <th>Previous repairs</th>
-      <th>No. and type of spans</th>
-      <th>Repair priority</th>
-      <th>General conditions</th>
-      <th>Walkway Rating</th>
-      <th>Walkway Comments</th>
-      <th>Handrail Rating</th>
-      <th>Handrail Comments</th>
-      <th>Track Rating</th>
-      <th>Track Comments</th>
-      <th>Ballast Rating</th>
-      <th>Ballast Comments</th>
-      <th>Deck Rating</th>
-      <th>Deck Comments</th>
-      <th>Floor System Rating</th>
-      <th>Floor System Comments</th>
-      <th>Through Girder Rating</th>
-      <th>Through Girder Comments</th>
-      <th>Cross Girder Rating</th>
-      <th>Cross Girder Comments</th>
-      <th>Stringer Rating</th>
-      <th>Stringer Comments</th>
-      <th>Bearing Rating</th>
-      <th>Bearing Comments</th>
-      <th>Column/Pier Rating</th>
-      <th>Column/Pier Comments</th>
-      <th>Cap Rating</th>
-      <th>Cap Comments</th>
-      <th>Post Rating</th>
-      <th>Post Comments</th>
-      <th>Base Rating</th>
-      <th>Base Comments</th>
-      <th>Abutment Rating</th>
-      <th>Abutment Comments</th>
-      <th>Backwall Rating</th>
-      <th>Backwall Comments</th>
-      <th>Seat Rating</th>
-      <th>Seat Comments</th>
-      <th>Paint Rating</th>
-      <th>Paint Comments</th>
-      <th>Last Painted Date</th>
-      <th>Lighting Rating</th>
-      <th>Lighting Comments</th>
-      <th>Lights Maintained by</th>
-      <th>Endpost Rating</th>
-      <th>Endpost Comments</th>
-      <th>Created by</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @bridges.each do |bridge| %>
-      <tr>
-        <td><%= image_tag bridge.image.url(:medium) %></td>
-        <td><%= bridge.BridgeNo %></td>
-        <td><%= bridge.Location %></td>
-        <td><%= bridge.InspectedBy %></td>
-        <td><%= bridge.InspectDate %></td>
-        <td><%= bridge.ChiViaNo %></td>
-        <td><%= bridge.DotCrossNo %></td>
-        <td><%= bridge.Built %></td>
-        <td><%= bridge.Type %></td>
-        <td><%= bridge.Length %></td>
-        <td><%= bridge.LastInspectDate %></td>
-        <td><%= bridge.LastRepairs %></td>
-        <td><%= bridge.NoTypeSpan %></td>
-        <td><%= bridge.RepairPriority %></td>
-        <td><%= bridge.GenCond %></td>
-        <td><%= bridge.Walkway %></td>
-        <td><%= bridge.ComWalkway %></td>
-        <td><%= bridge.Handrail %></td>
-        <td><%= bridge.ComHandrail %></td>
-        <td><%= bridge.Track %></td>
-        <td><%= bridge.ComTrack %></td>
-        <td><%= bridge.Ballast %></td>
-        <td><%= bridge.ComBallast %></td>
-        <td><%= bridge.Deck %></td>
-        <td><%= bridge.ComDeck %></td>
-        <td><%= bridge.FloorSystem %></td>
-        <td><%= bridge.ComFloorSystem %></td>
-        <td><%= bridge.ThruGirder %></td>
-        <td><%= bridge.ComThruGirder %></td>
-        <td><%= bridge.Xgirder %></td>
-        <td><%= bridge.ComXGirder %></td>
-        <td><%= bridge.Stringer %></td>
-        <td><%= bridge.ComStringer %></td>
-        <td><%= bridge.Bearing %></td>
-        <td><%= bridge.ComBearing %></td>
-        <td><%= bridge.ColPier %></td>
-        <td><%= bridge.ComColPier %></td>
-        <td><%= bridge.Caps %></td>
-        <td><%= bridge.ComCap %></td>
-        <td><%= bridge.Post %></td>
-        <td><%= bridge.ComPost %></td>
-        <td><%= bridge.Bases %></td>
-        <td><%= bridge.ComBase %></td>
-        <td><%= bridge.Abut %></td>
-        <td><%= bridge.ComAbut %></td>
-        <td><%= bridge.BackWall %></td>
-        <td><%= bridge.ComBackWall %></td>
-        <td><%= bridge.Seat %></td>
-        <td><%= bridge.ComSeat %></td>
-        <td><%= bridge.Paint %></td>
-        <td><%= bridge.ComPaint %></td>
-        <td><%= bridge.LastPaint %></td>
-        <td><%= bridge.Light %></td>
-        <td><%= bridge.ComLight %></td>
-        <td><%= bridge.MaintLight %></td>
-        <td><%= bridge.Endpost %></td>
-        <td><%= bridge.ComEndpost %></td>
-        <td><%= bridge.user.email if bridge.user %></td>
-        <td><%= link_to 'Show', bridge %></td>
-        <% if bridge.user == current_user %>
-          <td><%= link_to 'Edit', edit_bridge_path(bridge) %></td>
-          <td><%= link_to 'Destroy', bridge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-  <% if user_signed_in? %>
-    <%= link_to 'New Bridge', new_bridge_path %>
+<div id="bridges" class="transitions-enabled">
+  <% @bridges.each do |bridge| %>
+    <div class="box panel panel-default">
+      <%= image_tag bridge.image.url(:medium) %>
+      <div class="panel-body">
+            <%= bridge.BridgeNo %><br>
+            <%= bridge.Location %><br>
+            <%= bridge.InspectDate %><br>
+            <%= bridge.user.email if bridge.user %><br>
+            <%= link_to 'Show', bridge %>
+            
+            <% if bridge.user == current_user %>
+              <%= link_to 'Edit', edit_bridge_path(bridge) %>
+              <%= link_to 'Destroy', bridge, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end %>
+      </div>
+    </div>
   <% end %>
+</div>
