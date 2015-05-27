@@ -2,7 +2,6 @@
   <% if @bridge.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@bridge.errors.count, "error") %> prohibited this bridge from being saved:</h2>
-
       <ul>
       <% @bridge.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -10,232 +9,237 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :BridgeNo %><br>
-    <%= f.text_field :BridgeNo %>
-  </div>
-  <div class="field">
-    <%= f.label :Location %><br>
-    <%= f.text_field :Location %>
-  </div>
-  <div class="field">
-    <%= f.label :InspectedBy %><br>
-    <%= f.text_field :InspectedBy %>
-  </div>
-  <div class="field">
-    <%= f.label :InspectDate %><br>
-    <%= f.date_select :InspectDate %>
-  </div>
-  <div class="field">
-    <%= f.label :ChiViaNo %><br>
-    <%= f.text_field :ChiViaNo %>
-  </div>
-  <div class="field">
-    <%= f.label :DotCrossNo %><br>
-    <%= f.text_field :DotCrossNo %>
-  </div>
-  <div class="field">
-    <%= f.label :Built %><br>
-    <%= f.number_field :Built %>
-  </div>
-  <div class="field">
-    <%= f.label :Type %><br>
-    <%= f.text_field :Type %>
-  </div>
-  <div class="field">
-    <%= f.label :Length %><br>
-    <%= f.number_field :Length %>
-  </div>
-  <div class="field">
-    <%= f.label :LastInspectDate %><br>
-    <%= f.date_select :LastInspectDate %>
-  </div>
-  <div class="field">
-    <%= f.label :LastRepairs %><br>
-    <%= f.text_field :LastRepairs %>
-  </div>
-  <div class="field">
-    <%= f.label :NoTypeSpan %><br>
-    <%= f.text_field :NoTypeSpan %>
-  </div>
-  <div class="field">
-    <%= f.label :RepairPriority %><br>
-    <%= f.number_field :RepairPriority %>
-  </div>
-  <div class="field">
-    <%= f.label :GenCond %><br>
-    <%= f.text_field :GenCond %>
-  </div>
-  <div class="field">
-    <%= f.label :Walkway %><br>
-    <%= f.number_field :Walkway %>
-  </div>
-  <div class="field">
-    <%= f.label :ComWalkway %><br>
-    <%= f.text_field :ComWalkway %>
-  </div>
-  <div class="field">
-    <%= f.label :Handrail %><br>
-    <%= f.number_field :Handrail %>
-  </div>
-  <div class="field">
-    <%= f.label :ComHandrail %><br>
-    <%= f.text_field :ComHandrail %>
-  </div>
-  <div class="field">
-    <%= f.label :Track %><br>
-    <%= f.number_field :Track %>
-  </div>
-  <div class="field">
-    <%= f.label :ComTrack %><br>
-    <%= f.text_field :ComTrack %>
-  </div>
-  <div class="field">
-    <%= f.label :Ballast %><br>
-    <%= f.number_field :Ballast %>
-  </div>
-  <div class="field">
-    <%= f.label :ComBallast %><br>
-    <%= f.text_field :ComBallast %>
-  </div>
-  <div class="field">
-    <%= f.label :Deck %><br>
-    <%= f.number_field :Deck %>
-  </div>
-  <div class="field">
-    <%= f.label :ComDeck %><br>
-    <%= f.text_field :ComDeck %>
-  </div>
-  <div class="field">
-    <%= f.label :FloorSystem %><br>
-    <%= f.number_field :FloorSystem %>
-  </div>
-  <div class="field">
-    <%= f.label :ComFloorSystem %><br>
-    <%= f.text_field :ComFloorSystem %>
-  </div>
-  <div class="field">
-    <%= f.label :ThruGirder %><br>
-    <%= f.number_field :ThruGirder %>
-  </div>
-  <div class="field">
-    <%= f.label :ComThruGirder %><br>
-    <%= f.text_field :ComThruGirder %>
-  </div>
-  <div class="field">
-    <%= f.label :Xgirder %><br>
-    <%= f.number_field :Xgirder %>
-  </div>
-  <div class="field">
-    <%= f.label :ComXGirder %><br>
-    <%= f.text_field :ComXGirder %>
-  </div>
-  <div class="field">
-    <%= f.label :Stringer %><br>
-    <%= f.number_field :Stringer %>
-  </div>
-  <div class="field">
-    <%= f.label :ComStringer %><br>
-    <%= f.text_field :ComStringer %>
-  </div>
-  <div class="field">
-    <%= f.label :Bearing %><br>
-    <%= f.number_field :Bearing %>
-  </div>
-  <div class="field">
-    <%= f.label :ComBearing %><br>
-    <%= f.text_field :ComBearing %>
-  </div>
-  <div class="field">
-    <%= f.label :ColPier %><br>
-    <%= f.number_field :ColPier %>
-  </div>
-  <div class="field">
-    <%= f.label :ComColPier %><br>
-    <%= f.text_field :ComColPier %>
-  </div>
-  <div class="field">
-    <%= f.label :Caps %><br>
-    <%= f.number_field :Caps %>
-  </div>
-  <div class="field">
-    <%= f.label :ComCap %><br>
-    <%= f.text_field :ComCap %>
-  </div>
-  <div class="field">
-    <%= f.label :Post %><br>
-    <%= f.number_field :Post %>
-  </div>
-  <div class="field">
-    <%= f.label :ComPost %><br>
-    <%= f.text_field :ComPost %>
-  </div>
-  <div class="field">
-    <%= f.label :Bases %><br>
-    <%= f.number_field :Bases %>
-  </div>
-  <div class="field">
-    <%= f.label :ComBase %><br>
-    <%= f.text_field :ComBase %>
-  </div>
-  <div class="field">
-    <%= f.label :Abut %><br>
-    <%= f.number_field :Abut %>
-  </div>
-  <div class="field">
-    <%= f.label :ComAbut %><br>
-    <%= f.text_field :ComAbut %>
-  </div>
-  <div class="field">
-    <%= f.label :BackWall %><br>
-    <%= f.number_field :BackWall %>
-  </div>
-  <div class="field">
-    <%= f.label :ComBackWall %><br>
-    <%= f.text_field :ComBackWall %>
-  </div>
-  <div class="field">
-    <%= f.label :Seat %><br>
-    <%= f.number_field :Seat %>
-  </div>
-  <div class="field">
-    <%= f.label :ComSeat %><br>
-    <%= f.text_field :ComSeat %>
-  </div>
-  <div class="field">
-    <%= f.label :Paint %><br>
-    <%= f.number_field :Paint %>
-  </div>
-  <div class="field">
-    <%= f.label :ComPaint %><br>
-    <%= f.text_field :ComPaint %>
-  </div>
-  <div class="field">
-    <%= f.label :LastPaint %><br>
-    <%= f.date_select :LastPaint %>
-  </div>
-  <div class="field">
-    <%= f.label :Light %><br>
-    <%= f.number_field :Light %>
-  </div>
-  <div class="field">
-    <%= f.label :ComLight %><br>
-    <%= f.text_field :ComLight %>
-  </div>
-  <div class="field">
-    <%= f.label :MaintLight %><br>
-    <%= f.text_field :MaintLight %>
-  </div>
-  <div class="field">
-    <%= f.label :Endpost %><br>
-    <%= f.number_field :Endpost %>
-  </div>
-  <div class="field">
-    <%= f.label :ComEndpost %><br>
-    <%= f.text_field :ComEndpost %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<div class="panel panel-default" >
+    <div class="form-group">
+      <%= f.label :image %><br>
+      <%= f.file_field :image, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :BridgeNo %><br>
+      <%= f.text_field :BridgeNo %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Location %><br>
+      <%= f.text_field :Location %>
+    </div>
+    <div class="form-group">
+      <%= f.label :InspectedBy %><br>
+      <%= f.text_field :InspectedBy %>
+    </div>
+    <div class="form-group">
+      <%= f.label :InspectDate %><br>
+      <%= f.date_select :InspectDate %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ChiViaNo %><br>
+      <%= f.text_field :ChiViaNo %>
+    </div>
+    <div class="form-group">
+      <%= f.label :DotCrossNo %><br>
+      <%= f.text_field :DotCrossNo %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Built %><br>
+      <%= f.number_field :Built %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Type %><br>
+      <%= f.text_field :Type %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Length %><br>
+      <%= f.number_field :Length %>
+    </div>
+    <div class="form-group">
+      <%= f.label :LastInspectDate %><br>
+      <%= f.date_select :LastInspectDate %>
+    </div>
+    <div class="form-group">
+      <%= f.label :LastRepairs %><br>
+      <%= f.text_field :LastRepairs %>
+    </div>
+    <div class="form-group">
+      <%= f.label :NoTypeSpan %><br>
+      <%= f.text_field :NoTypeSpan %>
+    </div>
+    <div class="form-group">
+      <%= f.label :RepairPriority %><br>
+      <%= f.number_field :RepairPriority %>
+    </div>
+    <div class="form-group">
+      <%= f.label :GenCond %><br>
+      <%= f.text_field :GenCond %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Walkway %><br>
+      <%= f.number_field :Walkway %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComWalkway %><br>
+      <%= f.text_field :ComWalkway %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Handrail %><br>
+      <%= f.number_field :Handrail %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComHandrail %><br>
+      <%= f.text_field :ComHandrail %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Track %><br>
+      <%= f.number_field :Track %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComTrack %><br>
+      <%= f.text_field :ComTrack %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Ballast %><br>
+      <%= f.number_field :Ballast %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComBallast %><br>
+      <%= f.text_field :ComBallast %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Deck %><br>
+      <%= f.number_field :Deck %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComDeck %><br>
+      <%= f.text_field :ComDeck %>
+    </div>
+    <div class="form-group">
+      <%= f.label :FloorSystem %><br>
+      <%= f.number_field :FloorSystem %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComFloorSystem %><br>
+      <%= f.text_field :ComFloorSystem %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ThruGirder %><br>
+      <%= f.number_field :ThruGirder %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComThruGirder %><br>
+      <%= f.text_field :ComThruGirder %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Xgirder %><br>
+      <%= f.number_field :Xgirder %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComXGirder %><br>
+      <%= f.text_field :ComXGirder %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Stringer %><br>
+      <%= f.number_field :Stringer %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComStringer %><br>
+      <%= f.text_field :ComStringer %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Bearing %><br>
+      <%= f.number_field :Bearing %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComBearing %><br>
+      <%= f.text_field :ComBearing %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ColPier %><br>
+      <%= f.number_field :ColPier %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComColPier %><br>
+      <%= f.text_field :ComColPier %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Caps %><br>
+      <%= f.number_field :Caps %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComCap %><br>
+      <%= f.text_field :ComCap %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Post %><br>
+      <%= f.number_field :Post %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComPost %><br>
+      <%= f.text_field :ComPost %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Bases %><br>
+      <%= f.number_field :Bases %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComBase %><br>
+      <%= f.text_field :ComBase %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Abut %><br>
+      <%= f.number_field :Abut %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComAbut %><br>
+      <%= f.text_field :ComAbut %>
+    </div>
+    <div class="form-group">
+      <%= f.label :BackWall %><br>
+      <%= f.number_field :BackWall %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComBackWall %><br>
+      <%= f.text_field :ComBackWall %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Seat %><br>
+      <%= f.number_field :Seat %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComSeat %><br>
+      <%= f.text_field :ComSeat %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Paint %><br>
+      <%= f.number_field :Paint %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComPaint %><br>
+      <%= f.text_field :ComPaint %>
+    </div>
+    <div class="form-group">
+      <%= f.label :LastPaint %><br>
+      <%= f.date_select :LastPaint %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Light %><br>
+      <%= f.number_field :Light %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComLight %><br>
+      <%= f.text_field :ComLight %>
+    </div>
+    <div class="form-group">
+      <%= f.label :MaintLight %><br>
+      <%= f.text_field :MaintLight %>
+    </div>
+    <div class="form-group">
+      <%= f.label :Endpost %><br>
+      <%= f.number_field :Endpost %>
+    </div>
+    <div class="form-group">
+      <%= f.label :ComEndpost %><br>
+      <%= f.text_field :ComEndpost %>
+    </div>
+    <div class="form-group">
+      <%= f.submit %>
+    </div>
+</div>
 <% end %>

@@ -52,6 +52,6 @@ class BridgesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def bridge_params
-      params.require(:bridge).permit(:BridgeNo, :Location, :InspectedBy, :InspectDate, :ChiViaNo, :DotCrossNo, :Built, :Type, :Length, :LastInspectDate, :LastRepairs, :NoTypeSpan, :RepairPriority, :GenCond, :Walkway, :ComWalkway, :Handrail, :ComHandrail, :Track, :ComTrack, :Ballast, :ComBallast, :Deck, :ComDeck, :FloorSystem, :ComFloorSystem, :ThruGirder, :ComThruGirder, :Xgirder, :ComXGirder, :Stringer, :ComStringer, :Bearing, :ComBearing, :ColPier, :ComColPier, :Caps, :ComCap, :Post, :ComPost, :Bases, :ComBase, :Abut, :ComAbut, :BackWall, :ComBackWall, :Seat, :ComSeat, :Paint, :ComPaint, :LastPaint, :Light, :ComLight, :MaintLight, :Endpost, :ComEndpost)
+      params.require(:bridge).permit(:image, :BridgeNo, :Location, :InspectedBy, :InspectDate, :ChiViaNo, :DotCrossNo, :Built, :Type, :Length, :LastInspectDate, :LastRepairs, :NoTypeSpan, :RepairPriority, :GenCond, :Walkway, :ComWalkway, :Handrail, :ComHandrail, :Track, :ComTrack, :Ballast, :ComBallast, :Deck, :ComDeck, :FloorSystem, :ComFloorSystem, :ThruGirder, :ComThruGirder, :Xgirder, :ComXGirder, :Stringer, :ComStringer, :Bearing, :ComBearing, :ColPier, :ComColPier, :Caps, :ComCap, :Post, :ComPost, :Bases, :ComBase, :Abut, :ComAbut, :BackWall, :ComBackWall, :Seat, :ComSeat, :Paint, :ComPaint, :LastPaint, :Light, :ComLight, :MaintLight, :Endpost, :ComEndpost)
     end
 end

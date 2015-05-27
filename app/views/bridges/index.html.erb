@@ -3,62 +3,63 @@
 <table>
   <thead>
     <tr>
-      <th>Bridgeno</th>
+      <th>Image</th>
+      <th>Bridge No.</th>
       <th>Location</th>
-      <th>Inspectedby</th>
-      <th>Inspectdate</th>
-      <th>Chiviano</th>
-      <th>Dotcrossno</th>
-      <th>Built</th>
+      <th>Inspected by</th>
+      <th>Inspection date</th>
+      <th>Chicago Viaduct No.</th>
+      <th>DOT Crossing No.</th>
+      <th>Year Built</th>
       <th>Type</th>
       <th>Length</th>
-      <th>Lastinspectdate</th>
-      <th>Lastrepairs</th>
-      <th>Notypespan</th>
-      <th>Repairpriority</th>
-      <th>Gencond</th>
-      <th>Walkway</th>
-      <th>Comwalkway</th>
-      <th>Handrail</th>
-      <th>Comhandrail</th>
-      <th>Track</th>
-      <th>Comtrack</th>
-      <th>Ballast</th>
-      <th>Comballast</th>
-      <th>Deck</th>
-      <th>Comdeck</th>
-      <th>Floorsystem</th>
-      <th>Comfloorsystem</th>
-      <th>Thrugirder</th>
-      <th>Comthrugirder</th>
-      <th>Xgirder</th>
-      <th>Comxgirder</th>
-      <th>Stringer</th>
-      <th>Comstringer</th>
-      <th>Bearing</th>
-      <th>Combearing</th>
-      <th>Colpier</th>
-      <th>Comcolpier</th>
-      <th>Caps</th>
-      <th>Comcap</th>
-      <th>Post</th>
-      <th>Compost</th>
-      <th>Bases</th>
-      <th>Combase</th>
-      <th>Abut</th>
-      <th>Comabut</th>
-      <th>Backwall</th>
-      <th>Combackwall</th>
-      <th>Seat</th>
-      <th>Comseat</th>
-      <th>Paint</th>
-      <th>Compaint</th>
-      <th>Lastpaint</th>
-      <th>Light</th>
-      <th>Comlight</th>
-      <th>Maintlight</th>
-      <th>Endpost</th>
-      <th>Comendpost</th>
+      <th>Previous inspection date</th>
+      <th>Previous repairs</th>
+      <th>No. and type of spans</th>
+      <th>Repair priority</th>
+      <th>General conditions</th>
+      <th>Walkway Rating</th>
+      <th>Walkway Comments</th>
+      <th>Handrail Rating</th>
+      <th>Handrail Comments</th>
+      <th>Track Rating</th>
+      <th>Track Comments</th>
+      <th>Ballast Rating</th>
+      <th>Ballast Comments</th>
+      <th>Deck Rating</th>
+      <th>Deck Comments</th>
+      <th>Floor System Rating</th>
+      <th>Floor System Comments</th>
+      <th>Through Girder Rating</th>
+      <th>Through Girder Comments</th>
+      <th>Cross Girder Rating</th>
+      <th>Cross Girder Comments</th>
+      <th>Stringer Rating</th>
+      <th>Stringer Comments</th>
+      <th>Bearing Rating</th>
+      <th>Bearing Comments</th>
+      <th>Column/Pier Rating</th>
+      <th>Column/Pier Comments</th>
+      <th>Cap Rating</th>
+      <th>Cap Comments</th>
+      <th>Post Rating</th>
+      <th>Post Comments</th>
+      <th>Base Rating</th>
+      <th>Base Comments</th>
+      <th>Abutment Rating</th>
+      <th>Abutment Comments</th>
+      <th>Backwall Rating</th>
+      <th>Backwall Comments</th>
+      <th>Seat Rating</th>
+      <th>Seat Comments</th>
+      <th>Paint Rating</th>
+      <th>Paint Comments</th>
+      <th>Last Painted Date</th>
+      <th>Lighting Rating</th>
+      <th>Lighting Comments</th>
+      <th>Lights Maintained by</th>
+      <th>Endpost Rating</th>
+      <th>Endpost Comments</th>
       <th>Created by</th>
       <th colspan="3"></th>
     </tr>
@@ -67,6 +68,7 @@
   <tbody>
     <% @bridges.each do |bridge| %>
       <tr>
+        <td><%= image_tag bridge.image.url(:medium) %></td>
         <td><%= bridge.BridgeNo %></td>
         <td><%= bridge.Location %></td>
         <td><%= bridge.InspectedBy %></td>
