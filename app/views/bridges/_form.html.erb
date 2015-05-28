@@ -44,7 +44,7 @@
     </div>
     <div class="form-group">
       <%= f.label "Year Built" %><br>
-      <%= f.number_field :Built, class: "form-control" %>
+      <%= f.number_field :Built, min: 1500, class: "form-control" %>
     </div>
     <div class="form-group">
       <%= f.label :Type %><br>
@@ -132,7 +132,7 @@
     </div>
     <div class="form-group">
       <%= f.label "Cross Girder Comments:" %><br>
-      <%= f.text_field :ComXGirder %>
+      <%= f.text_field :ComXGirder, class: "form-control" %>
     </div>
     <div class="form-group">
       <%= f.label "Stringer Rating:" %><br>
