@@ -1,18 +1,20 @@
 <div id="bridges" class="transitions-enabled">
   <% @bridges.each do |bridge| %>
     <div class="box panel panel-default">
-      <%= image_tag bridge.image.url(:medium) %>
+      <%= link_to image_tag(bridge.image.url(:medium)), bridge %>
       <div class="panel-body">
-            <%= bridge.BridgeNo %><br>
-            <%= bridge.Location %><br>
-            <%= bridge.InspectDate %><br>
-            <%= bridge.user.email if bridge.user %><br>
-            <%= link_to 'Show', bridge %>
-            
-            <% if bridge.user == current_user %>
-              <%= link_to 'Edit', edit_bridge_path(bridge) %>
-              <%= link_to 'Destroy', bridge, method: :delete, data: { confirm: 'Are you sure?' } %>
-            <% end %>
+        <%= bridge.BridgeNo %><br>
+        <%= bridge.Location %><br>
+        <%= bridge.InspectDate %><br>
+        <%= bridge.user.email if bridge.user %><br>
+        <%= link_to 'Show', bridge %>
+        
+        <% if bridge.user == current_user %>
+          <div class="actions">
+            <%= link_to 'Edit', edit_bridge_path(bridge) %>
+            <%= link_to 'Destroy', bridge, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+        <% end %>
       </div>
     </div>
   <% end %>

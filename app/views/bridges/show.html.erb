@@ -1,286 +1,244 @@
-<%= image_tag @bridge.image.url(:medium) %>
-
-<p>
-  <strong>Bridgeno:</strong>
-  <%= @bridge.BridgeNo %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @bridge.Location %>
-</p>
-
-<p>
-  <strong>Inspectedby:</strong>
-  <%= @bridge.InspectedBy %>
-</p>
-
-<p>
-  <strong>Inspectdate:</strong>
-  <%= @bridge.InspectDate %>
-</p>
-
-<p>
-  <strong>Chiviano:</strong>
-  <%= @bridge.ChiViaNo %>
-</p>
-
-<p>
-  <strong>Dotcrossno:</strong>
-  <%= @bridge.DotCrossNo %>
-</p>
-
-<p>
-  <strong>Built:</strong>
-  <%= @bridge.Built %>
-</p>
-
-<p>
-  <strong>Type:</strong>
-  <%= @bridge.Type %>
-</p>
-
-<p>
-  <strong>Length:</strong>
-  <%= @bridge.Length %>
-</p>
-
-<p>
-  <strong>Lastinspectdate:</strong>
-  <%= @bridge.LastInspectDate %>
-</p>
-
-<p>
-  <strong>Lastrepairs:</strong>
-  <%= @bridge.LastRepairs %>
-</p>
-
-<p>
-  <strong>Notypespan:</strong>
-  <%= @bridge.NoTypeSpan %>
-</p>
-
-<p>
-  <strong>Repairpriority:</strong>
-  <%= @bridge.RepairPriority %>
-</p>
-
-<p>
-  <strong>Gencond:</strong>
-  <%= @bridge.GenCond %>
-</p>
-
-<p>
-  <strong>Walkway:</strong>
-  <%= @bridge.Walkway %>
-</p>
-
-<p>
-  <strong>Comwalkway:</strong>
-  <%= @bridge.ComWalkway %>
-</p>
-
-<p>
-  <strong>Handrail:</strong>
-  <%= @bridge.Handrail %>
-</p>
-
-<p>
-  <strong>Comhandrail:</strong>
-  <%= @bridge.ComHandrail %>
-</p>
-
-<p>
-  <strong>Track:</strong>
-  <%= @bridge.Track %>
-</p>
-
-<p>
-  <strong>Comtrack:</strong>
-  <%= @bridge.ComTrack %>
-</p>
-
-<p>
-  <strong>Ballast:</strong>
-  <%= @bridge.Ballast %>
-</p>
-
-<p>
-  <strong>Comballast:</strong>
-  <%= @bridge.ComBallast %>
-</p>
-
-<p>
-  <strong>Deck:</strong>
-  <%= @bridge.Deck %>
-</p>
-
-<p>
-  <strong>Comdeck:</strong>
-  <%= @bridge.ComDeck %>
-</p>
-
-<p>
-  <strong>Floorsystem:</strong>
-  <%= @bridge.FloorSystem %>
-</p>
-
-<p>
-  <strong>Comfloorsystem:</strong>
-  <%= @bridge.ComFloorSystem %>
-</p>
-
-<p>
-  <strong>Thrugirder:</strong>
-  <%= @bridge.ThruGirder %>
-</p>
-
-<p>
-  <strong>Comthrugirder:</strong>
-  <%= @bridge.ComThruGirder %>
-</p>
-
-<p>
-  <strong>Xgirder:</strong>
-  <%= @bridge.Xgirder %>
-</p>
-
-<p>
-  <strong>Comxgirder:</strong>
-  <%= @bridge.ComXGirder %>
-</p>
-
-<p>
-  <strong>Stringer:</strong>
-  <%= @bridge.Stringer %>
-</p>
-
-<p>
-  <strong>Comstringer:</strong>
-  <%= @bridge.ComStringer %>
-</p>
-
-<p>
-  <strong>Bearing:</strong>
-  <%= @bridge.Bearing %>
-</p>
-
-<p>
-  <strong>Combearing:</strong>
-  <%= @bridge.ComBearing %>
-</p>
-
-<p>
-  <strong>Colpier:</strong>
-  <%= @bridge.ColPier %>
-</p>
-
-<p>
-  <strong>Comcolpier:</strong>
-  <%= @bridge.ComColPier %>
-</p>
-
-<p>
-  <strong>Caps:</strong>
-  <%= @bridge.Caps %>
-</p>
-
-<p>
-  <strong>Comcap:</strong>
-  <%= @bridge.ComCap %>
-</p>
-
-<p>
-  <strong>Post:</strong>
-  <%= @bridge.Post %>
-</p>
-
-<p>
-  <strong>Compost:</strong>
-  <%= @bridge.ComPost %>
-</p>
-
-<p>
-  <strong>Bases:</strong>
-  <%= @bridge.Bases %>
-</p>
-
-<p>
-  <strong>Combase:</strong>
-  <%= @bridge.ComBase %>
-</p>
-
-<p>
-  <strong>Abut:</strong>
-  <%= @bridge.Abut %>
-</p>
-
-<p>
-  <strong>Comabut:</strong>
-  <%= @bridge.ComAbut %>
-</p>
-
-<p>
-  <strong>Backwall:</strong>
-  <%= @bridge.BackWall %>
-</p>
-
-<p>
-  <strong>Combackwall:</strong>
-  <%= @bridge.ComBackWall %>
-</p>
-
-<p>
-  <strong>Seat:</strong>
-  <%= @bridge.Seat %>
-</p>
-
-<p>
-  <strong>Comseat:</strong>
-  <%= @bridge.ComSeat %>
-</p>
-
-<p>
-  <strong>Paint:</strong>
-  <%= @bridge.Paint %>
-</p>
-
-<p>
-  <strong>Compaint:</strong>
-  <%= @bridge.ComPaint %>
-</p>
-
-<p>
-  <strong>Lastpaint:</strong>
-  <%= @bridge.LastPaint %>
-</p>
-
-<p>
-  <strong>Light:</strong>
-  <%= @bridge.Light %>
-</p>
-
-<p>
-  <strong>Comlight:</strong>
-  <%= @bridge.ComLight %>
-</p>
-
-<p>
-  <strong>Maintlight:</strong>
-  <%= @bridge.MaintLight %>
-</p>
-
-<p>
-  <strong>Endpost:</strong>
-  <%= @bridge.Endpost %>
-</p>
-
-<p>
-  <strong>Comendpost:</strong>
-  <%= @bridge.ComEndpost %>
-</p>
-
-<% if @bridge.user == current_user %>
-  <%= link_to 'Edit', edit_bridge_path(@bridge) %> |
-<% end %>
 <%= link_to 'Back', bridges_path %>
+
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading center">
+        <%= image_tag @bridge.image.url(:medium) %>
+      </div>
+      <div class="panel-body">
+          <p>
+            <strong>Bridge No.:</strong>
+            <%= @bridge.BridgeNo %>
+          </p>
+          <p>
+            <strong>Location:</strong>
+            <%= @bridge.Location %>
+          </p>      
+          <p>
+            <strong>Inspected By:</strong>
+            <%= @bridge.InspectedBy %>
+          </p>      
+          <p>
+            <strong>Inspection Date:</strong>
+            <%= @bridge.InspectDate %>
+          </p>
+          <p>
+            <strong>Previous Inspection Date:</strong>
+            <%= @bridge.LastInspectDate %>
+          </p>       
+          <p>
+            <strong>Chicago Viaduct No.:</strong>
+            <%= @bridge.ChiViaNo %>
+          </p>
+          <p>
+            <strong>DOT Crossing No.:</strong>
+            <%= @bridge.DotCrossNo %>
+          </p>        
+          <p>
+            <strong>Built:</strong>
+            <%= @bridge.Built %>
+          </p>       
+          <p>
+            <strong>Type:</strong>
+            <%= @bridge.Type %>
+          </p>       
+          <p>
+            <strong>Length(ft):</strong>
+            <%= @bridge.Length %>
+          </p>       
+          <p>
+            <strong>No. and Type of Spans:</strong>
+            <%= @bridge.NoTypeSpan %>
+          </p>
+          <p>
+            <strong>Last Repairs:</strong>
+            <%= @bridge.LastRepairs %>
+          </p>
+          <p>
+            <strong>Repair Priority:</strong>
+            <%= @bridge.RepairPriority %>
+          </p>
+          <p>
+            <strong>General Conditions</strong>
+            <%= @bridge.GenCond %>
+          </p>
+          <p>
+            <strong>Walkway Rating:</strong>
+            <%= @bridge.Walkway %>
+          </p>
+          <p>
+            <strong>Walkway Comments</strong>
+            <%= @bridge.ComWalkway %>
+          </p>
+          <p>
+          <strong>Handrail Rating:</strong>
+          <%= @bridge.Handrail %>
+          </p>
+          <p>
+            <strong>Handrail Comments</strong>
+            <%= @bridge.ComHandrail %>
+          </p>
+          <p>
+            <strong>Track Rating:</strong>
+            <%= @bridge.Track %>
+          </p>
+          <p>
+            <strong>Track Comments:</strong>
+            <%= @bridge.ComTrack %>
+          </p>
+          <p>
+            <strong>Ballast Rating:</strong>
+            <%= @bridge.Ballast %>
+          </p>
+          <p>
+            <strong>Ballast Comments:</strong>
+            <%= @bridge.ComBallast %>
+          </p>
+          <p>
+            <strong>Deck Rating:</strong>
+            <%= @bridge.Deck %>
+          </p>
+          <p>
+            <strong>Deck Comments:</strong>
+            <%= @bridge.ComDeck %>
+          </p>
+          <p>
+            <strong>Floor System Rating:</strong>
+            <%= @bridge.FloorSystem %>
+          </p>
+          <p>
+            <strong>Floor System Comments:</strong>
+            <%= @bridge.ComFloorSystem %>
+          </p>
+          <p>
+            <strong>Through Girder Rating:</strong>
+            <%= @bridge.ThruGirder %>
+          </p>
+          <p>
+            <strong>Through Girder Comments:</strong>
+            <%= @bridge.ComThruGirder %>
+          </p>
+          <p>
+            <strong>Cross Girder Rating:</strong>
+            <%= @bridge.Xgirder %>
+          </p>
+          <p>
+            <strong>Cross Girder Comments:</strong>
+            <%= @bridge.ComXGirder %>
+          </p>
+          <p>
+            <strong>Stringer Rating:</strong>
+            <%= @bridge.Stringer %>
+          </p>
+          <p>
+            <strong>Stringer Comments:</strong>
+            <%= @bridge.ComStringer %>
+          </p>
+          <p>
+            <strong>Bearing Rating:</strong>
+            <%= @bridge.Bearing %>
+          </p>
+          <p>
+            <strong>Bearing Comments:</strong>
+            <%= @bridge.ComBearing %>
+          </p>
+          <p>
+            <strong>Column/Pier Rating:</strong>
+            <%= @bridge.ColPier %>
+          </p>
+          <p>
+            <strong>Column/Pier Comments:</strong>
+            <%= @bridge.ComColPier %>
+          </p>
+          <p>
+            <strong>Caps Rating:</strong>
+            <%= @bridge.Caps %>
+          </p>
+          <p>
+            <strong>Caps Comments:</strong>
+            <%= @bridge.ComCap %>
+          </p>
+          <p>
+            <strong>Posts Rating:</strong>
+            <%= @bridge.Post %>
+          </p>
+          <p>
+            <strong>Posts Comments:</strong>
+            <%= @bridge.ComPost %>
+          </p>
+          <p>
+            <strong>Bases Rating:</strong>
+            <%= @bridge.Bases %>
+          </p>
+          <p>
+            <strong>Bases Comments:</strong>
+            <%= @bridge.ComBase %>
+          </p>
+          <p>
+            <strong>Abutments Rating:</strong>
+            <%= @bridge.Abut %>
+          </p>
+          <p>
+            <strong>Abutments Comments:</strong>
+            <%= @bridge.ComAbut %>
+          </p>
+          <p>
+            <strong>Backwalls Rating:</strong>
+            <%= @bridge.BackWall %>
+          </p>
+          <p>
+            <strong>Backwalls Comments:</strong>
+            <%= @bridge.ComBackWall %>
+          </p>
+          <p>
+            <strong>Seats Rating:</strong>
+            <%= @bridge.Seat %>
+          </p>
+          <p>
+            <strong>Seats Comments:</strong>
+            <%= @bridge.ComSeat %>
+          </p>
+          <p>
+            <strong>Paint Rating:</strong>
+            <%= @bridge.Paint %>
+          </p>
+          <p>
+            <strong>Paint Comments:</strong>
+            <%= @bridge.ComPaint %>
+          </p>
+          <p>
+            <strong>Date of Last Painting:</strong>
+            <%= @bridge.LastPaint %>
+          </p>
+          <p>
+            <strong>Lighting Rating:</strong>
+            <%= @bridge.Light %>
+          </p>
+          <p>
+            <strong>Lighting Comments:</strong>
+            <%= @bridge.ComLight %>
+          </p>
+          <p>
+            <strong>Lights Maintained By:</strong>
+            <%= @bridge.MaintLight %>
+          </p>
+          <p>
+            <strong>Endposts Rating:</strong>
+            <%= @bridge.Endpost %>
+          </p>
+          <p>
+            <strong>Endposts Comments:</strong>
+            <%= @bridge.ComEndpost %>
+          </p>
+        
+        </table>
+      </div>
+    
+<div class="panel panel-footer">
+  <% if @bridge.user == current_user %>
+    <%= link_to 'Edit', edit_bridge_path(@bridge) %> |
+  <% end %>
+  <%= link_to 'Back', bridges_path %>
+</div>
+</div>
